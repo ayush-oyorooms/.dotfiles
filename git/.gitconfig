@@ -1,0 +1,10 @@
+[user]
+	name = Ayush Shrivastava
+	email = ayush.shrivastava@oyorooms.com
+	signingkey = E03EAB3BB986E5F0
+[core]
+	editor = nvim
+[init]
+	defaultBranch = master
+[commit]
+	gpgsign = true
