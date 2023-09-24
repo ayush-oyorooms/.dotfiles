@@ -2,7 +2,7 @@
 
 This tree is meant for dotfiles management in the system. It comprises of the
 config files essential to the specific utils. I am using this tree in
-conjunction with [`stow`](https://www.gnu.org/software/stow/manual/stow.html#Introduction) for easier management of config 
+conjunction with [`stow`](https://www.gnu.org/software/stow/manual/stow.html) for easier management of config 
 files.
 Stow creates symlinks to the config files at target locations, with installation
 image heirarchy being specified in the package directory. Know more about the
@@ -46,4 +46,4 @@ In order to stow a config file:
 * Also, after updating the zshrc, it needs not be sourced if updated in the stow
   dir and `stow`ed too.
 
-fwiw, this has been done via docs solely, and a blog, [link](https://stevenrbaker.com/tech/managing-dotfiles-with-gnu-stow.html).
+fwiw, this has been done via docs solely, and a blog, [link](https://web.archive.org/web/20230924171233/https://stevenrbaker.com/tech/managing-dotfiles-with-gnu-stow.html).
