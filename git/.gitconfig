@@ -8,3 +8,9 @@
 	defaultBranch = master
 [commit]
 	gpgsign = true
+[alias]
+	aaex = add -- .
+	unstage = reset HEAD --
+	cprev = log -1 HEAD
+	cprevs = log -1 --oneline HEAD
+	ls-alias = config --get-regexp ^alias

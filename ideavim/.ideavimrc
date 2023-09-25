@@ -41,6 +41,7 @@ Plug 'tpope/vim-commentary'
 "" Custom maps
 
 map U <C-r>
+
 nmap gb <Action>(Back)
 nmap gc <Action>(QuickJavaDoc)
 nmap gs <Action>(ShowUsages)
@@ -48,6 +49,9 @@ nmap gi <Action>(GotoImplementation)
 nmap gl <Action>(NextTab)
 nmap gh <Action>(PreviousTab)
 nmap X <Action>(ReopenClosedTab)
+
+map <leader>f <Action>(ReformatCode)
+
 nmap <leader>i <Action>(QuickImplementations)
 nmap <leader>w <Action>(CloseActiveTab)
 nmap <leader>q <Action>(CloseProject)
@@ -56,7 +60,7 @@ nmap <leader>t <Action>(ActivateTerminalToolWindow)
 nmap <leader>h <Action>(HideActiveWindow)
 nmap <leader>p <Action>(ActivateProjectToolWindow)
 nmap <leader>s <Action>(EvaluateExpression)
-map <leader>f <Action>(ReformatCode)
+nmap <leader>o <Action>(OptimizeImports)
 nmap <leader>da <Action>(Debug)
 nmap <leader>pa <Action>(Run)
 nmap <leader>dw <Action>(ActivateDebugToolWindow)
