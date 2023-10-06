@@ -1,2 +1,3 @@
 *.pub
 ssh/.ssh/id*
+zsh/.zsh_secrets
