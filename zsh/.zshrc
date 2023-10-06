@@ -28,7 +28,7 @@ precmd() {
 }
 
 # https://superuser.com/a/1108504
-export PS1=$'⚡ \033[1;31m%1d: \033[m\$ '
+export PS1=$'⚡\033[1;31m%1d: \033[m\$ '
 export XDG_CONFIG_HOME="~/.config"
 export nvm_cfg="~/.config/nvim/init.lua"
 
@@ -37,6 +37,7 @@ export nvm_cfg="~/.config/nvim/init.lua"
 # export AWS_ACCESS_KEY_ID=AKIAXBBSDNXKAKDUNPWY
 # export AWS_SECRET_ACCESS_KEY=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
 # export CPLUS_INCLUDE_PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include
+source ~/.zsh_secrets
 clear
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!

@@ -14,3 +14,5 @@
 	cprev = log -1 HEAD
 	cprevs = log -1 --oneline HEAD
 	ls-alias = config --get-regexp ^alias
+[pull]
+	ff = only
