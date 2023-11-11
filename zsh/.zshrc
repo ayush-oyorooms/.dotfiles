@@ -4,7 +4,9 @@ precmd() {
   echo -ne "\e]1;${PWD##*/}\a"
 }
 
-export PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+# install the gnu-sed via : https://formulae.brew.sh/formula/gnu-sed
+# Note that the value of $HOMEBREW_PREFIX can be found out via grepping it from `brew config`, it isn't the envar
+export PATH=/opt/homebrew/opt/gnu-sed/libexec/gnubin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export CLICOLOR=1
 export LSCOLORS=gxcxdxdxbxxxxxbxbxgxgx
 # export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
