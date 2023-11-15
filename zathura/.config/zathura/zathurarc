@@ -4,9 +4,15 @@ set selection-clipboard clipboard
 set adjust-open "best-fit"
 set font 'monospace normal 16'
 
-unmap f
+# map [mode] <keybind> <fn> <optional-args>
+# if not provided, default [mode] for keybind to work is `normal`
+# https://github.com/pwmt/zathura/blob/9ab68dd1ee3640e56e4e4575112fcae44f8e40ca/doc/configuration/map.rst
+
 map f toggle_fullscreen
-# map [fullscreen] toggle_fullscreen
+map [fullscreen] d scroll half-down
+map [fullscreen] u scroll half-up
+map [fullscreen] Q quit
+map [fullscreen] f toggle_fullscreen
 
 # Shamelessly copied from:
 # https://github.com/dracula/zathura/blob/b597b1537aa125e8829bef2cc57a0b0c6a6b35a1/zathurarc
