@@ -3,12 +3,7 @@ source ~/.zsh_sets
 source ~/.zsh_secrets # secrets as env_vars, like access keys and ips
 source ~/.zsh_aliases
 source ~/.zsh_exports
-source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
-
-kubeoff
-autoload -Uz compinit
-compinit
-source <(kubectl completion zsh)
+source ~/.zsh_scripts
 
 clear
 

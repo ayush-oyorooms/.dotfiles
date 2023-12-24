@@ -9,9 +9,9 @@ export LS_COLORS
 export CLICOLOR=1
 # export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 
-export PS1=$'\033[1;31m%1d |\033[1;3m\033[1;35m$(parse_git_branch)\033[m: \033[m\$ '
+PS1=$'\033[1;31m%1d |\033[1;3m\033[1;35m$(parse_git_branch)\033[m: \033[m\$ '
+export PS1='⚡$(kube_ps1) '$PS1
 export KUBE_PS1_SYMBOL_ENABLE=false
-PS1='⚡$(kube_ps1) '$PS1
 export XDG_CONFIG_HOME="~/.config"
 
 # for some reason nvim on this mac(Monterey 12.6.8) does not source init.lua automatically
