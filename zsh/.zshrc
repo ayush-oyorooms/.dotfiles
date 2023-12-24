@@ -20,7 +20,7 @@ parse_git_branch() {
 
 setopt PROMPT_SUBST
 # export PS1=$'⚡\033[1;31m%1d\033[m$(parse_git_branch): \$ ' # https://superuser.com/a/1108504
-export PS1=$'⚡\033[1;31m%1d |\033[1;3m\033[1;35m$(parse_git_branch)\033[m: \033[m\$ '
+export PS1=$'\033[1;31m%1d |\033[1;3m\033[1;35m$(parse_git_branch)\033[m: \033[m\$ '
 export XDG_CONFIG_HOME="~/.config"
 
 # for some reason nvim on this mac(Monterey 12.6.8) does not source init.lua automatically
@@ -32,7 +32,14 @@ setopt interactivecomments # https://stackoverflow.com/a/11873793/13738635
 
 source ~/.zsh_secrets # secrets as env_vars, like access keys and ips
 source ~/.zsh_aliases
+source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
+export KUBE_PS1_SYMBOL_ENABLE=false
+PS1='⚡$(kube_ps1) '$PS1
+kubeoff
 
+autoload -Uz compinit
+compinit
+source <(kubectl completion zsh)
 clear
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
