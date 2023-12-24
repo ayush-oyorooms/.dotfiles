@@ -1,2 +1,2 @@
-print("hiiii")
+-- print("hiiii")
 require("potnix_nvm")

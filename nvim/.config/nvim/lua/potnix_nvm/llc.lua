@@ -41,4 +41,4 @@ require('lualine').setup {
   inactive_winbar = {},
   extensions = {}
 }
-print("sourced lline_config")
+-- print("sourced lline_config")

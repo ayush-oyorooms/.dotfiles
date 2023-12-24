@@ -26,4 +26,4 @@ vim.opt.termguicolors = true
 
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
-print("sourced prefs.")
+-- print("sourced prefs.")

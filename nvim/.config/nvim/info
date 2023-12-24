@@ -1,0 +1,2 @@
+Apparently init.lua does not get sourced automatically in stupid mac, hence the
+existence of init.vim
