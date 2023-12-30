@@ -1,8 +1,8 @@
 source ~/.zsh_custom_fns
 source ~/.zsh_sets
 source ~/.zsh_secrets # secrets as env_vars, like access keys and ips
+source ~/.zsh_exports # first exports then aliases, because some aliases use exports(envars) 
 source ~/.zsh_aliases
-source ~/.zsh_exports
 source ~/.zsh_scripts
 
 clear
