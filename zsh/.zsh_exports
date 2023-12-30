@@ -18,3 +18,7 @@ export XDG_CONFIG_HOME="~/.config"
 # you gotta use init.vim to get the config sourced
 # export nvm_cfg="~/.config/nvim/init.lua"
 export SDKMAN_DIR="$HOME/.sdkman"
+export image_hash_nesting='.status["containerStatuses"][]."image"'
+export ingresses="ingresses.networking.k8s.io"
+export nginx_ingresses=".metadata.annotations[\"nginx.ingress.kubernetes.io/server-alias\"]"
+export db_creds="{ url: .data[\"DB_URL\"], username: .data[\"DB_USERNAME\"], passwd: .data[\"DB_PASSWORD\"] }"
