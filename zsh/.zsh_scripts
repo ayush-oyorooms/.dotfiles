@@ -1,0 +1,10 @@
+# this ALWAYS has to be before compinit - https://docs.brew.sh/Shell-Completion#configuring-completions-in-zsh
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+  autoload -Uz compinit
+  compinit
+fi
+source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
+source <(kubectl completion zsh)
