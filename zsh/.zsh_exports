@@ -22,3 +22,4 @@ export image_hash_nesting='.status["containerStatuses"][]."image"'
 export ingresses="ingresses.networking.k8s.io"
 export nginx_ingresses=".metadata.annotations[\"nginx.ingress.kubernetes.io/server-alias\"]"
 export db_creds="{ url: .data[\"DB_URL\"], username: .data[\"DB_USERNAME\"], passwd: .data[\"DB_PASSWORD\"] }"
+export dbver_cred_cfg="/Users/ayush/Library/DBeaverData/workspace6/General/.dbeaver/credentials-config.json"
