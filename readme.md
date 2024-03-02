@@ -17,17 +17,17 @@ For a package, say `nvim`,
 * It's installation image would be:
 
 ```
-    /nvim
-        ├── after
-        │   └── plugin
-        │       ├── cfg_plugin_1.lua
-        │       └── cfg_plugin_2.lua
-        ├── init.lua
-        ├── lua
-        │   └── dir
-        │       └── stuff.lua
-        └── plugin
-            └── packer_compiled.lua
+/nvim
+    ├── after
+    │   └── plugin
+    │       ├── cfg_plugin_1.lua
+    │       └── cfg_plugin_2.lua
+    ├── init.lua
+    ├── lua
+    │   └── dir
+    │       └── stuff.lua
+    └── plugin
+        └── packer_compiled.lua
 ```
 
 And this installation image would need to be inside `~/.config/`
@@ -47,3 +47,12 @@ In order to stow a config file:
   dir and `stow`ed too.
 
 fwiw, this has been done via docs solely, and a blog, [link](https://web.archive.org/web/20230924171233/https://stevenrbaker.com/tech/managing-dotfiles-with-gnu-stow.html).
+
+## Installation
+1. `nvim`
+- Install `nvim` firstly from relevant package manager
+- Install `Packer` from [here](https://github.com/wbthomason/packer.nvim#quickstart)
+- Execute `stow nvim`
+- Source the `packer.lua` file via `:so`
+- `:PackerSync` & `:PackerInstall`
+- It should be ready now

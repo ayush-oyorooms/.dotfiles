@@ -36,3 +36,5 @@
 	whitespace = red reverse
 [diff-so-fancy]
 	stripLeadingSymbols = true
+[includeIf "gitdir:~/Desktop/prs/"]
+    path = ~/.gitconfig-prs

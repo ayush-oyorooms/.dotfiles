@@ -13,3 +13,18 @@ alias a="az"
 alias ashm="a ssh vm --ip"
 alias kon="kubeon"
 alias koff="kubeoff"
+alias pcp="pbcopy"
+alias claer="clear"
+alias kns="kubens"
+alias get-ingresses="jq -C '$nginx_ingresses' | sed 's/ /\"\n\"/' "
+alias extract-db-creds="jq -C '$db_creds'"
+alias b64="base64"
+alias dbeaver-creds="openssl aes-128-cbc -d \
+                      -K babb4a9f774ab853c96c2d653dfe544a \
+                      -iv 00000000000000000000000000000000 \
+                      -in '$dbver_cred_cfg' | \
+                      dd bs=1 skip=16 2>/dev/null | jq -r"
+alias get-cfg="jq '.data' | sed 's/:/=/ ; s/,$/;/ ; ' | tr '\n' ' ' | sed 's/\"//g ; s/ //g ; s/{// ; s/}//' | pbcopy"
+alias get-img="jq -C '.spec.template.spec.containers[].image'"
+alias dsf="diff-so-fancy"
+alias kctx="kubectx"
