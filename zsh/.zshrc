@@ -5,7 +5,5 @@ source ~/.zsh_exports # first exports then aliases, because some aliases use exp
 source ~/.zsh_aliases
 source ~/.zsh_scripts
 
-clear
-
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
