@@ -1,6 +1,6 @@
-export PATH="/opt/homebrew/opt/ccache/libexec:/opt/homebrew/opt/icu4c/lib/pkgconfig:/opt/homebrew/opt/icu4c/sbin:/opt/homebrew/opt/icu4c/bin:/opt/homebrew/opt/findutils/libexec/gnubin:/opt/homebrew/opt/coreutils/libexec/gnubin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.rvm/bin"
-export HOMEBREW_NO_AUTO_UPDATE="1"
 export HOMEBREW_PREFIX=$(brew --prefix)
+export PATH="$HOMEBREW_PREFIX/opt/gsed/libexec/gnubin:/opt/homebrew/opt/grep/libexec/gnubin:/opt/homebrew/opt/ccache/libexec:/opt/homebrew/opt/icu4c/lib/pkgconfig:/opt/homebrew/opt/icu4c/sbin:/opt/homebrew/opt/icu4c/bin:/opt/homebrew/opt/findutils/libexec/gnubin:/opt/homebrew/opt/coreutils/libexec/gnubin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.rvm/bin:$HOME/.cargo/bin"
+export HOMEBREW_NO_AUTO_UPDATE="1"
 export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/icu4c/lib/pkgconfig"
 
 # install the gnu-sed via : https://formulae.brew.sh/formula/gnu-sed
