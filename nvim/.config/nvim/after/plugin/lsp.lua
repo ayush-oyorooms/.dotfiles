@@ -10,6 +10,11 @@ lsp.nvim_workspace()
 --   'ltex'
 -- })
 
+require'lspconfig'.clangd.setup{}
+
+require'lspconfig'.gitlab_ci_ls.setup{}
+require'lspconfig'.yamlls.setup{}
+
 local cmp = require("cmp")
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
 local cmp_mappings = lsp.defaults.cmp_mappings({
@@ -31,5 +36,6 @@ lsp.on_attach(function(client, bfr)
 	local opts = { buffer = bfr, remap = false }
 	vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
 end)
+
 
 lsp.setup()
