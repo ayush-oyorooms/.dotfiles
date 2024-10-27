@@ -1,7 +1,7 @@
 [user]
 	name = Ayush Shrivastava
 	email = ayush.shrivastava@oyorooms.com
-	signingkey = E03EAB3BB986E5F0
+	signingkey = FFD25B3C5D4235D0
 [core]
 	editor = nvim
 	pager = diff-so-fancy | less --tabs=4 -RFX
@@ -15,6 +15,9 @@
 	cprev = log -1 HEAD
 	cprevs = log -1 --oneline HEAD
 	ls-alias = config --get-regexp ^alias
+    cf = commit --amend --no-edit
+    cloen = clone
+    pus = push
 [pull]
 	ff = only
 [interactive]
@@ -40,3 +43,9 @@
 	name = Ayush Shrivastava
 	email = ayush_1901cb14@iitp.ac.in
     path = ~/.gitconfig-prs
+[includeIf "gitdir:~/Desktop/learn/"]
+	name = Ayush Shrivastava
+	email = ayush_1901cb14@iitp.ac.in
+    path = ~/.gitconfig-prs
+[push]
+	autoSetupRemote = true
