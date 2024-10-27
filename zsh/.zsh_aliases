@@ -30,3 +30,12 @@ alias get-ing-rules="jq -C '.spec.rules[].http.paths[] | {svc: .backend.service.
 alias get-ingress-rules="jq -C '.spec.rules[].http.paths[] | {svc: .backend.service.name, ep: .path}'"
 alias dsf="diff-so-fancy"
 alias kctx="kubectx"
+alias gti="git"
+alias kuebctl="kubectl"
+
+## remove these and use a proper routing table ffs
+alias add_staging_route='sudo route add -host 34.78.20.150 -interface ppp0'
+alias add_gitlab_route='sudo route add -host 35.205.100.143 -interface ppp0'
+alias add_production_route='sudo route add -host 35.205.56.50 -interface ppp0'
+alias add_agitha_route='sudo route add -host 35.187.36.27 -interface ppp0'
+alias add_routes='add_staging_route && add_production_route && add_gitlab_route && add_agitha_route'

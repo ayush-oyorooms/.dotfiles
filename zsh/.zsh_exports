@@ -1,4 +1,5 @@
-export PATH="/opt/homebrew/opt/gsed/libexec/gnubin:/opt/homebrew/opt/grep/libexec/gnubin:/opt/homebrew/opt/ccache/libexec:/opt/homebrew/opt/icu4c/lib/pkgconfig:/opt/homebrew/opt/icu4c/sbin:/opt/homebrew/opt/icu4c/bin:/opt/homebrew/opt/findutils/libexec/gnubin:/opt/homebrew/opt/coreutils/libexec/gnubin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.rvm/bin:$HOME/.cargo/bin"
+export PATH="/opt/homebrew/opt/gsed/libexec/gnubin:/opt/homebrew/opt/grep/libexec/gnubin:/opt/homebrew/opt/ccache/libexec:/opt/homebrew/opt/icu4c/lib/pkgconfig:/opt/homebrew/opt/icu4c/sbin:/opt/homebrew/opt/icu4c/bin:/opt/homebrew/opt/findutils/libexec/gnubin:/opt/homebrew/opt/coreutils/libexec/gnubin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/opt/homebrew/opt/bison/bin:/sbin:$HOME/.rvm/bin:$HOME/.cargo/bin:${KREW_ROOT:-$HOME/.krew}/bin"
+export PATH="/opt/homebrew/opt/bison/bin:$PATH"
 export HOMEBREW_PREFIX=$(brew --prefix)
 export HOMEBREW_NO_AUTO_UPDATE="1"
 export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/icu4c/lib/pkgconfig"
@@ -30,3 +31,5 @@ export ingresses="ingresses.networking.k8s.io"
 export nginx_ingresses=".metadata.annotations[\"nginx.ingress.kubernetes.io/server-alias\"]"
 export db_creds="{ url: .data[\"DB_URL\"], username: .data[\"DB_USERNAME\"], passwd: .data[\"DB_PASSWORD\"] }"
 export dbver_cred_cfg="/Users/ayush/Library/DBeaverData/workspace6/General/.dbeaver/credentials-config.json"
+export LDFLAGS="-L/opt/homebrew/opt/bison/lib"
+export KUBE_EDITOR="nvim"
