@@ -1,4 +1,7 @@
+# glob match
 *.pub
 ssh/.ssh/id*
 zsh/.zsh_secrets
-nvim/*/*/*.lua
+
+# wildcard / recursive match
+nvim/**/packer_compiled.lua
