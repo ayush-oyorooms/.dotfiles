@@ -1,4 +1,4 @@
-export PATH="/opt/homebrew/opt/gsed/libexec/gnubin:/opt/homebrew/opt/grep/libexec/gnubin:/opt/homebrew/opt/ccache/libexec:/opt/homebrew/opt/icu4c/lib/pkgconfig:/opt/homebrew/opt/icu4c/sbin:/opt/homebrew/opt/icu4c/bin:/opt/homebrew/opt/findutils/libexec/gnubin:/opt/homebrew/opt/coreutils/libexec/gnubin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/opt/homebrew/opt/bison/bin:/sbin:$HOME/.rvm/bin:$HOME/.cargo/bin:${KREW_ROOT:-$HOME/.krew}/bin"
+export PATH="/opt/homebrew/opt/gsed/libexec/gnubin:/opt/homebrew/opt/grep/libexec/gnubin:/opt/homebrew/opt/ccache/libexec:/opt/homebrew/opt/icu4c/lib/pkgconfig:/opt/homebrew/opt/icu4c/sbin:/opt/homebrew/opt/icu4c/bin:/opt/homebrew/opt/findutils/libexec/gnubin:/opt/homebrew/opt/coreutils/libexec/gnubin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/opt/homebrew/opt/bison/bin:/sbin:$HOME/.rvm/bin:$HOME/.cargo/bin:${KREW_ROOT:-$HOME/.krew}/bin:/opt/homebrew/bin/lua-language-server"
 export PATH="/opt/homebrew/opt/bison/bin:$PATH"
 export HOMEBREW_PREFIX=$(brew --prefix)
 export HOMEBREW_NO_AUTO_UPDATE="1"
