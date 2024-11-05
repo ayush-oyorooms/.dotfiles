@@ -9,8 +9,18 @@ return require('packer').startup(function(use)
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.4',
 	  -- or                            , branch = '0.1.x',
-	  requires = { {'nvim-lua/plenary.nvim'} }
+	  requires = { {'nvim-lua/plenary.nvim'} },
+      config = function ()
+          require('telescope').setup({
+              layout_config = {
+                  vertical = { width = 0.3 }
+              }
+          })
+      end
   }
+
+  use {'nvim-telescope/telescope-ui-select.nvim' }
+
   use({
       'rose-pine/neovim',
       as = 'rose-pine',
