@@ -1,6 +1,6 @@
 vim.api.nvim_create_autocmd({ "BufNewFile" }, {
     pattern = { "*.cpp" },
-    command = "0r ~/.vim/templates/cppFileInfra.cpp"
+    command = "0r ~/.nvim/templates/cppFileInfra.cpp"
 })
 
 vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {

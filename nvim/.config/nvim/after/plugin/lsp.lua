@@ -31,12 +31,12 @@ lsp.on_attach(function(client, bfr)
     vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
     vim.keymap.set("n", "gi", function() vim.lsp.buf.implementation() end, opts)
     vim.keymap.set("n", "gt", function() vim.lsp.buf.type_definition() end, opts)
-    vim.keymap.set("n", "<leader>ca", function() vim.lsp.buf.code_action() end, opts) -- code actions
+    vim.keymap.set("n", "<leader>ca", function() vim.lsp.buf.code_action() end, opts, {desc = "what improvements can be made in current code"})
 
     vim.keymap.set("n", "<leader>dn", function() vim.diagnostic.goto_next() end, opts)
     vim.keymap.set("n", "<leader>dn", function() vim.diagnostic.goto_prev() end, opts)
     vim.keymap.set("n", "<leader>dl", function() vim.cmd("Telescope diagnostics") end, opts)
-    vim.keymap.set("n", "<leader>di", function() vim.diagnostic.open_float() end, opts) -- diagnostic info
+    vim.keymap.set("n", "<leader>di", function() vim.diagnostic.open_float() end, opts, { desc = "more information about the diagnostic" })
     vim.keymap.set("n", "<leader>F", function() vim.lsp.buf.format({ bufnr = bfr }) end, opts,
         { desc = "format code according to lsp" })
 
@@ -54,6 +54,7 @@ lsp.on_attach(function(client, bfr)
         })
     end, opts)
     -- till here
+    vim.keymap.set("n", "<leader>r", function() vim.lsp.buf.rename() end, opts, { desc = "rename in accordance with LSP" })
 end
 )
 
