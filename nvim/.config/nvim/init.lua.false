@@ -1,0 +1,2 @@
+-- print("sourcing init.lua")
+require("potnix_nvm")

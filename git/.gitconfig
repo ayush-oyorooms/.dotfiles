@@ -1,40 +1,54 @@
 [user]
-	name = Ayush Shrivastava
-	email = ayush.shrivastava@oyorooms.com
-	signingkey = E03EAB3BB986E5F0
+    name = Ayush Shrivastava
+    email = ayush.shrivastava@oyorooms.com
+    signingkey = FFD25B3C5D4235D0
 [core]
-	editor = nvim
-	pager = diff-so-fancy | less --tabs=4 -RFX
+    editor = nvim
+    pager = diff-so-fancy | less --tabs=4 -RFX
 [init]
-	defaultBranch = master
+    defaultBranch = master
 [commit]
-	gpgsign = true
+    gpgsign = true
 [alias]
-	aaex = add -- .
-	unstage = reset HEAD --
-	cprev = log -1 HEAD
-	cprevs = log -1 --oneline HEAD
-	ls-alias = config --get-regexp ^alias
+    aaex = add -- .
+    unstage = reset HEAD --
+    cprev = log -1 HEAD
+    cprevs = log -1 --oneline HEAD
+    ls-alias = config --get-regexp ^alias
+    cf = commit --amend --no-edit
+    cloen = clone
+    pus = push
+    remoet = remote
+    remtoe = remote
+    slog = log --oneline -n 5
 [pull]
-	ff = only
+    ff = only
 [interactive]
-	diffFilter = diff-so-fancy --patch
+    diffFilter = diff-so-fancy --patch
 [color]
-	ui = true
+    ui = true
 [color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
+    oldNormal = red bold
+    oldHighlight = red bold 52
+    newNormal = green bold
+    newHighlight = green bold 22
 [color "diff"]
-	meta = 11
-	frag = magenta bold
-	func = 146 bold
-	commit = yellow bold
-	old = red bold
-	new = green bold
-	whitespace = red reverse
+    meta = 11
+    frag = magenta bold
+    func = 146 bold
+    commit = yellow bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
 [diff-so-fancy]
-	stripLeadingSymbols = true
+    stripLeadingSymbols = true
 [includeIf "gitdir:~/Desktop/prs/"]
+    name = Ayush Shrivastava
+    email = ayush_1901cb14@iitp.ac.in
     path = ~/.gitconfig-prs
+[includeIf "gitdir:~/Desktop/learn/"]
+    name = Ayush Shrivastava
+    email = ayush_1901cb14@iitp.ac.in
+    path = ~/.gitconfig-prs
+[push]
+    autoSetupRemote = true

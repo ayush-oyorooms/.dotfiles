@@ -3,3 +3,4 @@ DISABLE_AUTO_TITLE="true"
 setopt PROMPT_SUBST
 setopt interactivecomments # https://stackoverflow.com/a/11873793/13738635
 # setopt extendedglob # https://unix.stackexchange.com/a/153863
+setopt noEXTENDEDGLOB # https://stackoverflow.com/a/26295653

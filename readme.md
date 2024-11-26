@@ -9,7 +9,7 @@ image heirarchy being specified in the package directory. Know more about the
 terminology [here](https://www.gnu.org/software/stow/manual/stow.html#Terminology).
 
 For this case:
-* `.dotfiles` is the stow directory. Full path: `~/Desktop/user_name/.dotfiles`
+* `.dotfiles` is the stow directory. Full path: `~/.dotfiles`
 * `~/` is the target directory. It usually is the parent of stow dir, unless
   specific explicitly.
 
@@ -41,7 +41,7 @@ dir path(for nvim, `~/.config/nvim` in this case) in it.
 In order to stow a config file:
 * Make sure it does not exist already inside target dir
 * Place it's config in a separate nested dir inside stow dir
-* stow that dir.
+* `stow` that dir.
 * Changes will now be reflected, that file will be visible in the target dir.
 * Also, after updating the zshrc, it needs not be sourced if updated in the stow
   dir and `stow`ed too.
@@ -55,4 +55,6 @@ fwiw, this has been done via docs solely, and a blog, [link](https://web.archive
 - Execute `stow nvim`
 - Source the `packer.lua` file via `:so`
 - `:PackerSync` & `:PackerInstall`
+- `:LspInstall` within `packer.lua`
 - It should be ready now
+- (backup one config if they happen to conflict, `mv init.vim init.vim.bkp`)

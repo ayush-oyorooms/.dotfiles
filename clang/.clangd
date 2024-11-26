@@ -1,0 +1,24 @@
+# paths generated via
+# g++-13 -E -v -xc++ /dev/null
+#
+# copy and paste the path b/w 
+# `#include <...> search starts here`
+# `....`
+# `....`
+# `End of search list.`
+#
+# ref:
+# https://imgur.com/a/UxA5IEc
+# where g++ is homebrew GCC
+
+CompileFlags:
+  Add:
+    - -std=c++17
+    - -I/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin21/13/../../../../../../include/c++/13
+    - -I/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin21/13/../../../../../../include/c++/13/aarch64-apple-darwin21
+    - -I/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin21/13/../../../../../../include/c++/13/backward
+    - -I/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin21/13/include
+    - -I/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin21/13/include-fixed
+    - -I/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include
+    - -I/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/System/Library/Frameworks
+
