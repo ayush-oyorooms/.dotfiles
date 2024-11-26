@@ -1,0 +1,12 @@
+[user]
+    name = Ayush Shrivastava
+    email = ayush_1901cb14@iitp.ac.in
+    signingkey=2482523122DBA630
+
+# disabling this, because I don't want ssh config to be scattered everywhere
+# the unified ssh config is in ~/.ssh/confi
+# [core]
+#    sshCommand = ssh -i ~/.ssh/s-ayush2903 -F /dev/null
+[commit]
+	gpgsign = true
+
