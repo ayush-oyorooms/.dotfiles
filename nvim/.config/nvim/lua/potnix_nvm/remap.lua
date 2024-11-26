@@ -19,5 +19,6 @@ vim.keymap.set("n", "ga", "<C-i>")
 -- vim.keymap.set("n", "<leader>Y", [["+Y]])
 
 vim.api.nvim_set_keymap("n", "U", ":lua vim.cmd('redo') <CR>", { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap("n", "mk", ":! g++ vim.current.buffer.name")
 
 -- print("sourced remaps")

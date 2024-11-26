@@ -1,6 +1,18 @@
 -- https://github.com/nvim-telescope/telescope.nvim?tab=readme-ov-file#pickers
 
 require("telescope").setup {
+-- defaults = {
+--    layout_strategy = 'vertical',  -- Set the layout strategy to vertical
+--    layout_config = {
+--      height = 0.9,  -- Set the height of the Telescope window
+--      width = 0.3,   -- Set the width to a narrow column (adjust as needed)
+--      preview_width = 0,  -- Optional: Hide the preview column (if you want a single column)
+--    },
+--    sorting_strategy = 'ascending',  -- Sorting order (ascending or descending)
+--    preview = {
+--      hide_on_startup = true,  -- Hide preview by default (optional)
+--    },
+--  },
     extensions = {
         ["ui-select"] = {
             require("telescope.themes").get_dropdown()
@@ -30,3 +42,5 @@ vim.keymap.set("n", "<leader>gj", function() builtin.jumplist() end, { desc = "g
 vim.keymap.set("n", "<leader>?", function() builtin.keymaps() end, { desc = "list all the keymappings" })
 vim.keymap.set("n", "<leader>hs", function() builtin.keymaps() end, { desc = "go through search history" })
 vim.keymap.set("n", "<leader>lr", function() builtin.oldfiles() end, { desc = "recently opened files" })
+vim.api.nvim_set_keymap('n', '<leader>gs', ':Telescope lsp_references<CR>', { noremap = true, silent = true })
+
