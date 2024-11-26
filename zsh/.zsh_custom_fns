@@ -1,3 +1,5 @@
+#!/bin/sh
+
 precmd() {
   # sets the tab title to current dir
   echo -ne "\e]1;${PWD##*/}\a"
@@ -6,4 +8,8 @@ precmd() {
 # https://stackoverflow.com/a/56178134/13738635
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/\* \(.*\)/ (\1)/'
+}
+
+help() {
+    curl -s cht.sh/learn:$1 | less -R
 }
