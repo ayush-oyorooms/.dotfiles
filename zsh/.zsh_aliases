@@ -39,3 +39,10 @@ alias add_gitlab_route='sudo route add -host 35.205.100.143 -interface ppp0'
 alias add_production_route='sudo route add -host 35.205.56.50 -interface ppp0'
 alias add_agitha_route='sudo route add -host 34.38.78.146 -interface ppp0'
 alias add_routes='add_staging_route && add_production_route && add_gitlab_route && add_agitha_route'
+
+alias pbp="pbpaste"
+
+# https://stackoverflow.com/a/75942149
+alias x86="$env /usr/bin/arch -x86_64 /bin/zsh ---login"
+alias arm="$env /usr/bin/arch -arm64 /bin/zsh ---login"
+# alias help="curl cht.sh/learn:$0 | less -R" # make a fn for this
