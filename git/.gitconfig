@@ -18,6 +18,9 @@
     cf = commit --amend --no-edit
     cloen = clone
     pus = push
+    remoet = remote
+    remtoe = remote
+    slog = log --oneline -n 5
 [pull]
     ff = only
 [interactive]
