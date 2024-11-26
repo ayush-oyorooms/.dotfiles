@@ -13,7 +13,7 @@
 
 CompileFlags:
   Add:
-    - -std=c++14
+    - -std=c++17
     - -I/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin21/13/../../../../../../include/c++/13
     - -I/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin21/13/../../../../../../include/c++/13/aarch64-apple-darwin21
     - -I/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin21/13/../../../../../../include/c++/13/backward
