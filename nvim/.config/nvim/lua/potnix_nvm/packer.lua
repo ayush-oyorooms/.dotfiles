@@ -78,5 +78,5 @@ return require('packer').startup(function(use)
     }
     use('mbbill/undotree')
     use('jiangmiao/auto-pairs')
-    print("sourced packer")
+    -- print("sourced packer")
 end)

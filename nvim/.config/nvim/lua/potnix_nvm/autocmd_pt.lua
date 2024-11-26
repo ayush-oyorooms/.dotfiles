@@ -9,4 +9,4 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
         vim.bo.filetype = "yaml.gitlab"
     end,
 })
-print("sourced autocmds")
+-- print("sourced autocmds")

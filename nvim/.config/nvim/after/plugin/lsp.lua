@@ -10,8 +10,7 @@ lsp.ensure_installed({
     "gopls",
     "pyright",
     "texlab",
-    "lua_ls",
-    "gitlab_ci_ls",
+    "lua_ls"
 })
 
 -- require ("lsp-zero").gitlab_ci_ls.setup()

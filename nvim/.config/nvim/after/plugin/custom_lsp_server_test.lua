@@ -1,5 +1,5 @@
-print(vim.cmd('echo "hiii"'))
-print(vim.cmd('pwd'))
+-- print(vim.cmd('echo "hiii"'))
+-- print(vim.cmd('pwd'))
 
 -- local lsp = require("after.plugin.lsp")
 
