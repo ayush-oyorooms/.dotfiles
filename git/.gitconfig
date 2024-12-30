@@ -1,7 +1,7 @@
 [user]
     name = Ayush Shrivastava
     email = ayush.shrivastava@oyorooms.com
-    signingkey = FFD25B3C5D4235D0
+    signingkey = 43D654656D58F0E1
 [core]
     editor = nvim
     pager = diff-so-fancy | less --tabs=4 -RFX
