@@ -11,5 +11,5 @@ parse_git_branch() {
 }
 
 help() {
-    curl -s cht.sh/learn:$1 | less -R
+    curl -s cht.sh/learn:"$1" | less -R
 }

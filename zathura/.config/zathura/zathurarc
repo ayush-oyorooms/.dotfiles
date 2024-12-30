@@ -14,6 +14,7 @@ map [fullscreen] u scroll half-up
 map [fullscreen] Q quit
 map [fullscreen] f toggle_fullscreen
 
+
 # Shamelessly copied from:
 # https://github.com/dracula/zathura/blob/b597b1537aa125e8829bef2cc57a0b0c6a6b35a1/zathurarc
 

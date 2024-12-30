@@ -50,5 +50,9 @@
     name = Ayush Shrivastava
     email = ayush_1901cb14@iitp.ac.in
     path = ~/.gitconfig-prs
+[includeIf "gitdir:~/Desktop/wsp/traum/"]
+    name = root
+    email = itops@traum-ferienwohnungen.de
+    path = ~/.gitconfig-traum
 [push]
     autoSetupRemote = true
